@@ -22,11 +22,13 @@ This project is an Android application developed in Java as part of an Object-Or
 ## Screenshots
 Here are some screenshots of the app:
 
-![Home Page](images/HomePage.png)
-![Login Page](images/LoginPage.png)
-![Search Page](images/SearchPage.png)
-![Notification Page](images/NotificationPage.png)
-![Create Post Page](images/CreatePostPage.png)
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="images/HomePage.png" alt="Home Page" style="width: 30%; margin-right: 10px;">
+    <img src="images/LoginPage.png" alt="Login Page" style="width: 30%; margin-right: 10px;">
+    <img src="images/SearchPage.png" alt="Search Page" style="width: 30%; margin-right: 10px;">
+    <img src="images/NotificationPage.png" alt="Notification Page" style="width: 30%; margin-right: 10px;">
+    <img src="images/CreatePostPage.png" alt="Create Post Page" style="width: 30%; margin-right: 10px;">
+</div>
 
 ## Installation
 To run this project, follow these steps:
