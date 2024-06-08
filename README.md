@@ -23,11 +23,11 @@ This project is an Android application developed in Java as part of an Object-Or
 Here are some screenshots of the app:
 
 <p float="left">
-  <img src="images/HomePage.jpeg" alt="Home Page" width="200" />
-  <img src="images/LoginPage.jpeg" alt="Login Page" width="200" />
-  <img src="images/SearchPage.jpeg" alt="Search Page" width="200" />
-  <img src="images/NotificationPage.jpeg" alt="Notification Page" width="200" />
-  <img src="images/CreatePostPage.jpeg" alt="Create Post Page" width="200" />
+  <img src="images/HomePage.jpg" alt="Home Page" width="200" />
+  <img src="images/LoginPage.jpg" alt="Login Page" width="200" />
+  <img src="images/SearchPage.jpg" alt="Search Page" width="200" />
+  <img src="images/NotificationPage.jpg" alt="Notification Page" width="200" />
+  <img src="images/CreatePostPage.jpg" alt="Create Post Page" width="200" />
 </p>
 
 ## Installation
