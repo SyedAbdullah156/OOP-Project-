@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aguafina_script</item>
+        <item>@font/alegreya_sc_bold_italic</item>
+        <item>@font/alegreya_sc_italic</item>
+        <item>@font/baloo</item>
+        <item>@font/roboto_bold</item>
+    </array>
+</resources>

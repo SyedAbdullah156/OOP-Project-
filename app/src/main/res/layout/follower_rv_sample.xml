@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_60mdp"
+    android:layout_height="@dimen/_70mdp"
+
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_60mdp"
+        android:layout_height="@dimen/_60mdp"
+        android:padding="4dp"
+        android:src="@drawable/profile"
+        diagonal:civ_border_color="@color/white"
+        diagonal:civ_border_width="2dp"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        diagonal:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Follower Username"
+        android:textSize="@dimen/_7font_mdp"
+        android:textStyle="bold"
+        diagonal:layout_constraintBottom_toBottomOf="parent"
+        diagonal:layout_constraintEnd_toEndOf="@+id/profile_image"
+        diagonal:layout_constraintHorizontal_bias="1.0"
+        diagonal:layout_constraintStart_toStartOf="@+id/profile_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

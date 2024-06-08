@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Inner layer for the background color -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Background color (opaque) -->
+            <solid android:color="@color/white" /> <!-- Change to your desired background color -->
+            <!-- Corner radius -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Outer layer for the border -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Border color -->
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/gray" /> <!-- Change to your desired border color -->
+            <!-- Corner radius -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>
+

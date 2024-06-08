@@ -1,0 +1,269 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200mdp"
+        android:background="@drawable/top_background_profile_page"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/circles"
+            diagonal:layout_constraintBottom_toBottomOf="parent"
+            diagonal:layout_constraintEnd_toEndOf="parent"
+            diagonal:layout_constraintHorizontal_bias="0.0"
+            diagonal:layout_constraintStart_toStartOf="parent"
+            diagonal:layout_constraintTop_toTopOf="parent"
+            diagonal:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_90mdp"
+        android:layout_height="@dimen/_90mdp"
+        android:layout_marginTop="@dimen/_70mdp"
+        android:padding="4dp"
+        android:src="@drawable/default_profile_image"
+        diagonal:civ_border_color="@color/white"
+        diagonal:civ_border_width="5dp"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toTopOf="parent"
+        diagonal:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        android:src="@drawable/ic_blue_tick"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        diagonal:layout_constraintEnd_toEndOf="@+id/profile_image"
+        diagonal:layout_constraintHorizontal_bias="0.9"
+        diagonal:layout_constraintStart_toStartOf="@+id/profile_image"
+        diagonal:layout_constraintTop_toTopOf="@+id/profile_image"
+        diagonal:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Syed Abdullah"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_10font_mdp"
+        android:textStyle="bold"
+        diagonal:layout_constraintEnd_toEndOf="@+id/profile_image"
+        diagonal:layout_constraintStart_toStartOf="@+id/profile_image"
+        diagonal:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Developer, Learner"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_10font_mdp"
+        diagonal:layout_constraintEnd_toEndOf="@+id/username"
+        diagonal:layout_constraintStart_toStartOf="@+id/username"
+        diagonal:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <!--    Follow button that will controll share as well as share buttons-->
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="@dimen/_120mdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:background="@drawable/button_enabled"
+        android:elevation="20dp"
+        android:stateListAnimator="@null"
+        android:text="Follow"
+        android:textColor="@color/white"
+        diagonal:layout_constraintEnd_toEndOf="@+id/profession"
+        diagonal:layout_constraintStart_toStartOf="@+id/profession"
+        diagonal:layout_constraintTop_toBottomOf="@+id/profession" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_chat_pic"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:padding="10dp"
+        android:src="@drawable/chat_pic"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/follow"
+        diagonal:layout_constraintEnd_toStartOf="@+id/follow"
+        diagonal:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circle_gray"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/profile_chat_pic"
+        diagonal:layout_constraintEnd_toEndOf="@+id/profile_chat_pic"
+        diagonal:layout_constraintStart_toStartOf="@+id/profile_chat_pic"
+        diagonal:layout_constraintTop_toTopOf="@+id/profile_chat_pic" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_share_pic"
+        android:layout_width="@dimen/_36mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:padding="3dp"
+        android:src="@drawable/share_pic"
+        diagonal:civ_border_color="@color/white"
+        diagonal:civ_border_width="5dp"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/follow"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintStart_toEndOf="@+id/follow" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circle_gray"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/profile_share_pic"
+        diagonal:layout_constraintEnd_toEndOf="@+id/profile_share_pic"
+        diagonal:layout_constraintStart_toStartOf="@+id/profile_share_pic"
+        diagonal:layout_constraintTop_toTopOf="@+id/profile_share_pic" />
+
+    <!--    Making 6 textViews for following followers and posts-->
+    <!-- Making following TextViews -->
+    <TextView
+        android:id="@+id/followingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="870"
+        android:textColor="#231F1F"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        diagonal:layout_constraintEnd_toStartOf="@+id/followersCount"
+        diagonal:layout_constraintHorizontal_bias="0.36"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toBottomOf="@+id/profile_chat_pic" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Following"
+        diagonal:layout_constraintEnd_toEndOf="@+id/followingCount"
+        diagonal:layout_constraintStart_toStartOf="@+id/followingCount"
+        diagonal:layout_constraintTop_toBottomOf="@+id/followingCount" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0.8dp"
+        android:layout_height="50dp"
+        android:background="@color/gray"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/followers"
+        diagonal:layout_constraintEnd_toStartOf="@id/followers"
+        diagonal:layout_constraintStart_toEndOf="@id/following" />
+
+    <!-- Making Followers Textviews-->
+    <TextView
+        android:id="@+id/followersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="120K"
+        android:textColor="#231F1F"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toBottomOf="@+id/follow" />
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:textColor="#8C8989"
+        android:textStyle="normal"
+        diagonal:layout_constraintEnd_toEndOf="@+id/followersCount"
+        diagonal:layout_constraintStart_toStartOf="@+id/followersCount"
+        diagonal:layout_constraintTop_toBottomOf="@+id/followersCount" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0.8dp"
+        android:layout_height="50dp"
+        android:background="@color/gray"
+        diagonal:layout_constraintBottom_toBottomOf="@+id/followers"
+        diagonal:layout_constraintEnd_toStartOf="@id/photos"
+        diagonal:layout_constraintStart_toEndOf="@id/followers" />
+
+    <!--Making posts TextViews-->
+    <TextView
+        android:id="@+id/photosCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="120"
+        android:textColor="#231F1F"
+        android:textSize="@dimen/_14font_mdp"
+        android:textStyle="bold"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintHorizontal_bias="0.65"
+        diagonal:layout_constraintStart_toEndOf="@+id/followersCount"
+        diagonal:layout_constraintTop_toBottomOf="@+id/profile_share_pic" />
+
+    <TextView
+        android:id="@+id/photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photos"
+        android:textColor="#8C8989"
+        android:textStyle="normal"
+        diagonal:layout_constraintEnd_toEndOf="@+id/photosCount"
+        diagonal:layout_constraintStart_toStartOf="@+id/photosCount"
+        diagonal:layout_constraintTop_toBottomOf="@+id/photosCount" />
+
+    <!--    Creating an about section-->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:text="Hello I am Syed Adbullah"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_10mdp"
+        diagonal:layout_constraintEnd_toEndOf="parent"
+        diagonal:layout_constraintHorizontal_bias="0.5"
+        diagonal:layout_constraintStart_toStartOf="parent"
+        diagonal:layout_constraintTop_toBottomOf="@+id/following" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Followers:"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        diagonal:layout_constraintBottom_toTopOf="@+id/followersRV"
+        diagonal:layout_constraintStart_toStartOf="parent" />
+    <!-- Making a recyler view for friends-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/followersRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        diagonal:layout_constraintBottom_toBottomOf="parent"
+        diagonal:layout_constraintStart_toStartOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
