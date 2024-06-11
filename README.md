@@ -35,8 +35,8 @@ To run this project, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/YourUsername/YourRepositoryName.git
-    cd YourRepositoryName
+    git clone https://github.com/SyedAbdullah156/OOP-Project-.git
+    cd cloned_repo
     ```
 
 2. **Open the project in Android Studio:**
